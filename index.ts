@@ -21,6 +21,10 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Express + TypeScript Server');
 });
 
+app.get('/ping', (req: Request, res: Response) => {
+    res.send('pong');
+});
+
 app.listen(port, () => {
     console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
 });
